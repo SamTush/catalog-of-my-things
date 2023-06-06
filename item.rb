@@ -3,13 +3,15 @@ class  Item
 
   attr_accessor :genre, :author, :source, :label
 
-  def initialize(id,publish_date,archive)
+  def initialize(id,publish_date,archive:false)
     @id = id
     @publish_date = publish_date
     @archive = archive
   end
 
   def move_to_archive()
+    if can_be_archived?
+      @archive = true
 
   end
 
