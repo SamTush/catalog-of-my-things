@@ -2,12 +2,11 @@ require 'date'
 require_relative 'item'
 
 class Game < Item
-  attr_accessor :title, :platform, :last_played_at
+  attr_accessor :last_played_at, :multiplayer
 
-  def initialize(id, publish_date, title, platform, last_played_at, archive: false)
+  def initialize(id, publish_date, last_played_at, multiplayer,archive: false)
     super(id, publish_date, archive: archive)
-    @title = title
-    @platform = platform
+    @multiplayer  =multiplayer
     @last_played_at = last_played_at
   end
 
