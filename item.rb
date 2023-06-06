@@ -1,22 +1,23 @@
-require 'Date'
-class Item
-  attr_accessor :genre, :author, :source, :label
+require 'date'
 
-  def initialize(id, publish_date, archive: false)
-    @id = id
+class Item
+  attr_accessor :genre, :author, :source, :label, :id, :archive
+
+  def initialize(id,publish_date, archive: false)
+    raise ArgumentError, "Invalid publish_date" unless publish_date.is_a?(Date)
+
     @publish_date = publish_date
     @archive = archive
+    @id = id
   end
 
-  def move_to_archive()
+  def move_to_archive
     @archive = true if can_be_archived?
   end
 
   private
 
   def can_be_archived?
-    return true if Date.today << 120 > @publish_date
-
-    false
+    Date.today << 120 > @publish_date
   end
 end
