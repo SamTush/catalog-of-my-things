@@ -2,19 +2,35 @@ require 'securerandom'
 require_relative 'item'
 
 
-class Author
-  attr_accessor :first_name, :last_name, :items
+class Author < Item
 
-  def initialize(first_name, last_name)
+  # attr_accessor :first_name, :last_name, :items
+  attr_reader :id, :first_name, :last_name, :items
+
+  def initialize(first_name, last_name,_items = [])
+    super()
     @id = generate_id
     @first_name = first_name
     @last_name = last_name
     @items = []
   end
 
+  def self.json_create(object)
+    new(object['first_name'], object['last_name'], object['items'])
+  end
+
   def add_item(item)
-    item.author = self
-    @items << item
+    @items << item unless @items.include?(item)
+    item.add_author(self)
+  end
+
+  def to_hash
+    {
+      id: @id,
+      first_name: @first_name,
+      last_name: @last_name,
+      items: @items.map(&:to_hash)
+    }
   end
 
   private
