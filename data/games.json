@@ -1,0 +1,249 @@
+{
+  "games": [
+    {
+      "id": 59,
+      "title": "vfg",
+      "multiplayer": true,
+      "last_played_at": "2022/8/5",
+      "publish_date": "2012/08/08",
+      "author_ids": [
+
+      ]
+    },
+    {
+      "id": 258,
+      "title": "kifo kisimani",
+      "multiplayer": false,
+      "last_played_at": "2023/8/4",
+      "publish_date": "2008/04/06",
+      "author_ids": [
+        644467
+      ]
+    },
+    {
+      "id": 301,
+      "title": "ksksks",
+      "multiplayer": true,
+      "last_played_at": "2021/8/5",
+      "publish_date": "2008/04/03",
+      "author_ids": [
+        3336
+      ]
+    },
+    {
+      "id": 822,
+      "title": "sdsdsdsdsdsdsdsd",
+      "multiplayer": true,
+      "last_played_at": "2008/8/8",
+      "publish_date": "2000/08/04",
+      "author_ids": [
+        199819
+      ]
+    },
+    {
+      "id": 59,
+      "title": "vfg",
+      "multiplayer": true,
+      "last_played_at": "2022/8/5",
+      "publish_date": "2012/08/08",
+      "author_ids": [
+
+      ]
+    },
+    {
+      "id": 258,
+      "title": "kifo kisimani",
+      "multiplayer": false,
+      "last_played_at": "2023/8/4",
+      "publish_date": "2008/04/06",
+      "author_ids": [
+        644467
+      ]
+    },
+    {
+      "id": 301,
+      "title": "ksksks",
+      "multiplayer": true,
+      "last_played_at": "2021/8/5",
+      "publish_date": "2008/04/03",
+      "author_ids": [
+        3336
+      ]
+    },
+    {
+      "id": 59,
+      "title": "vfg",
+      "multiplayer": true,
+      "last_played_at": "2022/8/5",
+      "publish_date": "2012/08/08",
+      "author_ids": [
+
+      ]
+    },
+    {
+      "id": 258,
+      "title": "kifo kisimani",
+      "multiplayer": false,
+      "last_played_at": "2023/8/4",
+      "publish_date": "2008/04/06",
+      "author_ids": [
+        644467
+      ]
+    },
+    {
+      "id": 253,
+      "title": "vfg",
+      "multiplayer": true,
+      "last_played_at": "2022/8/5",
+      "publish_date": "2012/08/08",
+      "author_ids": [
+        623184
+      ]
+    }
+  ],
+  "authors": [
+    {
+      "id": 87012,
+      "first_name": "aff",
+      "last_name": "fedf",
+      "items": [
+
+      ]
+    },
+    {
+      "id": 644467,
+      "first_name": "lengushuru",
+      "last_name": "charles",
+      "items": [
+        {
+          "id": 258,
+          "title": "kifo kisimani",
+          "multiplayer": false,
+          "last_played_at": "2023/8/4",
+          "publish_date": "2008/04/06",
+          "author_ids": [
+            644467
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3336,
+      "first_name": "ghjhjhj",
+      "last_name": "efefe",
+      "items": [
+        {
+          "id": 301,
+          "title": "ksksks",
+          "multiplayer": true,
+          "last_played_at": "2021/8/5",
+          "publish_date": "2008/04/03",
+          "author_ids": [
+            3336
+          ]
+        }
+      ]
+    },
+    {
+      "id": 199819,
+      "first_name": "xxxxxxxxxx",
+      "last_name": "xxxxxxxxxxxxx",
+      "items": [
+        {
+          "id": 822,
+          "title": "sdsdsdsdsdsdsdsd",
+          "multiplayer": true,
+          "last_played_at": "2008/8/8",
+          "publish_date": "2000/08/04",
+          "author_ids": [
+            199819
+          ]
+        }
+      ]
+    },
+    {
+      "id": 87012,
+      "first_name": "aff",
+      "last_name": "fedf",
+      "items": [
+
+      ]
+    },
+    {
+      "id": 644467,
+      "first_name": "lengushuru",
+      "last_name": "charles",
+      "items": [
+        {
+          "id": 258,
+          "title": "kifo kisimani",
+          "multiplayer": false,
+          "last_played_at": "2023/8/4",
+          "publish_date": "2008/04/06",
+          "author_ids": [
+            644467
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3336,
+      "first_name": "ghjhjhj",
+      "last_name": "efefe",
+      "items": [
+        {
+          "id": 301,
+          "title": "ksksks",
+          "multiplayer": true,
+          "last_played_at": "2021/8/5",
+          "publish_date": "2008/04/03",
+          "author_ids": [
+            3336
+          ]
+        }
+      ]
+    },
+    {
+      "id": 87012,
+      "first_name": "aff",
+      "last_name": "fedf",
+      "items": [
+
+      ]
+    },
+    {
+      "id": 644467,
+      "first_name": "lengushuru",
+      "last_name": "charles",
+      "items": [
+        {
+          "id": 258,
+          "title": "kifo kisimani",
+          "multiplayer": false,
+          "last_played_at": "2023/8/4",
+          "publish_date": "2008/04/06",
+          "author_ids": [
+            644467
+          ]
+        }
+      ]
+    },
+    {
+      "id": 623184,
+      "first_name": "aff",
+      "last_name": "fedf",
+      "items": [
+        {
+          "id": 253,
+          "title": "vfg",
+          "multiplayer": true,
+          "last_played_at": "2022/8/5",
+          "publish_date": "2012/08/08",
+          "author_ids": [
+            623184
+          ]
+        }
+      ]
+    }
+  ]
+}

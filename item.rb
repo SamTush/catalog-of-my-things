@@ -1,23 +1,35 @@
 require 'date'
 
 class Item
-  attr_accessor :genre, :author, :source, :label, :id, :archive
+  attr_accessor :id, :genre, :author, :source, :label, :publish_date, :archived
 
-  def initialize(id,publish_date, archive: false)
-    raise ArgumentError, "Invalid publish_date" unless publish_date.is_a?(Date)
-
-    @publish_date = publish_date
-    @archive = archive
+  def initialize(id = Random.rand(1..1000))
     @id = id
+    @genre = nil
+    @author = nil
+    @source = nil
+    @label = nil
+    @publish_date = nil
+    @archived = false
   end
 
   def move_to_archive
-    @archive = true if can_be_archived?
+    @archived = true if can_be_archived?
   end
 
   private
 
   def can_be_archived?
-    Date.today << 120 > @publish_date
+    begin
+      publish_date = Date.parse(@publish_date)
+    rescue StandardError
+      publish_date = nil
+    end
+    if publish_date.nil?
+      false
+    else
+      (Date.today.year - publish_date.year) > 10
+    end
   end
 end
+
