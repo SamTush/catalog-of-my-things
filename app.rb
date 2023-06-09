@@ -17,7 +17,7 @@ class App
     when '1'
       # book = BookMethods.new('./data/books.json')
       # book.run
-      require_relative 'book-collection'
+      require_relative 'book_collection'
 
     when '2'
       album = MusicAlbumDisplay.new('./data/albums.json')
