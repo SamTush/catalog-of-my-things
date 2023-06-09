@@ -18,7 +18,7 @@ books = books_data.map do |book_data|
     book_data['genre'],
     book_data['author'],
     book_data['source'],
-    nil, # The label will be set later when loading labels
+    nil,
     Date.parse(book_data['publish_date']),
     book_data['publisher'],
     book_data['cover_state']
@@ -81,7 +81,7 @@ loop do
     if label_index.negative? || label_index >= labels.length
       puts 'Invalid label index. Book cannot be added.'
     else
-      label = labels[label_index]
+      selected_label = labels[label_index]
       puts 'Publish Date (YYYY-MM-DD):'
       publish_date = Date.parse(gets.chomp)
       puts 'Publisher:'
@@ -89,8 +89,8 @@ loop do
       puts 'Cover State (good/bad):'
       cover_state = gets.chomp
 
-      new_book = Book.new(id, genre, author, source, label, publish_date, publisher, cover_state)
-      label.add_item(new_book)
+      new_book = Book.new(id, genre, author, source, selected_label, publish_date, publisher, cover_state)
+      selected_label.add_item(new_book)
       puts 'Book added successfully!'
 
       # Add the new book to the books list
@@ -110,11 +110,11 @@ loop do
         }
       end
 
-      labels_data = labels.map do |label|
+      labels_data = labels.map do |lbl|
         {
-          'id' => label.id,
-          'name' => label.name,
-          'items' => label.items.map(&:id)
+          'id' => lbl.id,
+          'name' => lbl.name,
+          'items' => lbl.items.map(&:id)
         }
       end
 
@@ -133,11 +133,11 @@ loop do
     puts 'Label added successfully!'
 
     # Save data to JSON files
-    labels_data = labels.map do |label|
+    labels_data = labels.map do |lbl|
       {
-        'id' => label.id,
-        'name' => label.name,
-        'items' => label.items.map(&:id)
+        'id' => lbl.id,
+        'name' => lbl.name,
+        'items' => lbl.items.map(&:id)
       }
     end
 
@@ -158,11 +158,11 @@ loop do
       }
     end
 
-    labels_data = labels.map do |label|
+    labels_data = labels.map do |lbl|
       {
-        'id' => label.id,
-        'name' => label.name,
-        'items' => label.items.map(&:id)
+        'id' => lbl.id,
+        'name' => lbl.name,
+        'items' => lbl.items.map(&:id)
       }
     end
 
