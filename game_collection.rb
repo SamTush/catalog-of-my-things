@@ -36,7 +36,7 @@ class GameStore
         puts "Multiplayer: #{game.multiplayer ? 'Yes' : 'No'}"
         puts "Last Played At: #{game.last_played_at}"
         puts "Publish Date: #{game.publish_date}"
-        puts "Authors: #{game.authors.map(&:full_name).join(', ')}"
+        puts "Authors: #{game.authors.map(&:first_name)}"
         puts '-' * 50
       end
     end
@@ -46,11 +46,10 @@ class GameStore
     if authors.empty?
       puts 'There are no authors in the catalog.'
     else
-      puts "***************** Author Information 🧑‍🏫 ********************\n"
+      puts "---------------------- Author Information 🧑‍🏫 ---------------------------\n"
       authors.each do |author|
         puts "Author ID: #{author.id}"
         puts "Name: #{author.full_name}"
-        puts "Items: #{author.items.map(&:title).join(', ')}"
         puts '-' * 50
       end
     end
