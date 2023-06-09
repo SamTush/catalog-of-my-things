@@ -4,7 +4,6 @@ require_relative 'item'
 
 class Author < Item
 
-  # attr_accessor :first_name, :last_name, :items
   attr_reader :id, :first_name, :last_name, :items
 
   def initialize(first_name, last_name,_items = [])

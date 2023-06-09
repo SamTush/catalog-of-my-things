@@ -2,6 +2,7 @@ require_relative 'game'
 require_relative 'game-collection'
 require 'json'
 
+
 class App
   def main_menu
     puts "Hey Welcome to Our catalog"
@@ -15,8 +16,10 @@ class App
     option = gets.chomp.downcase
     case option
     when '1'
-      book = BookMethods.new('./data/books.json')
-      book.run
+      # book = BookMethods.new('./data/books.json')
+      # book.run
+      require_relative 'book-collection'
+
     when '2'
       album = MusicAlbumDisplay.new('./data/albums.json')
       album.run

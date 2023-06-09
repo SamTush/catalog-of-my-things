@@ -133,7 +133,7 @@ class GameStore
         puts "\n"
         return app.main_menu
       else
-        puts 'Ooops!!! Invalid option ❌'
+        puts 'Ooops!!! Invalid option'
         return run
       end
     end
