@@ -101,7 +101,7 @@ class GameStore
       puts '1. List all games'
       puts '2. List all authors'
       puts '3. Add game'
-      puts '4. Quit'
+      puts '4. <--- go back'
       choice = gets.chomp.to_i
       case choice
       when 1
@@ -127,9 +127,11 @@ class GameStore
         add_game(game)
       when 4
         save_data
-        print 'Thanks for using our catalog 😘'
+        print 'Thanks for checking Games 😘'
         puts "\n"
-        return app.main_menu
+        require_relative 'app'
+        app = App.new
+        app.main_menu
       else
         puts 'Ooops!!! Invalid option'
         return run

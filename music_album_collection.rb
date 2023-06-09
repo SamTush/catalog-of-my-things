@@ -47,7 +47,7 @@ loop do
   puts '2. List all genres'
   puts '3. Add a music album'
   puts '4. Add genre'
-  puts '5. Exit'
+  puts '5. <--- go back'
 
   choice = gets.chomp.to_i
 
@@ -143,7 +143,7 @@ loop do
 
     File.write(GENRES_FILE, JSON.generate(genres_data))
   when 5
-    puts 'Exiting the program...'
+    puts 'Thanks for checking Music 😘'
     # Save data to JSON files before exiting
     musics_data = musics.map do |music|
       {
@@ -168,6 +168,8 @@ loop do
     File.write(MUSICS_FILE, JSON.generate(musics_data))
     File.write(GENRES_FILE, JSON.generate(genres_data))
 
-    break
+    require_relative 'app'
+    app = App.new
+    app.main_menu
   end
 end

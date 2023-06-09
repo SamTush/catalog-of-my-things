@@ -2,7 +2,6 @@ require 'rspec'
 require_relative '../genre'
 require_relative '../music_album'
 
-
 describe Genre do
   let(:genre) { Genre.new(1, 'Rock') }
   let(:music_album) { MusicAlbum.new(1, 'Rock', 'Artist', 'Source', '2023-06-09', true) }

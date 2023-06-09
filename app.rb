@@ -2,7 +2,6 @@ require_relative 'game'
 require_relative 'game_collection'
 require 'json'
 
-
 class App
   def main_menu
     puts 'Hey Welcome to Our catalog'
@@ -30,7 +29,7 @@ class App
 
     when '4'
       puts 'Thanks for spending sometime in our catalog '
-      nil
+      exit(0)
     else
       puts 'oops it seems something went wrong, Please try again.'
       main_menu
