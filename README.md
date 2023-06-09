@@ -13,7 +13,7 @@ In this project, We create a console app that will help us to keep a record of d
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🔗 Demo video](#demo-link)
+  - [🔗 Demo video](#demo-video)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
 - [👥 Authors](#authors)
@@ -45,11 +45,13 @@ In this project, We create a console app that will help us to keep a record of d
 </details>
 
 
+<!-- DEMO VIDEO -->
 
+## 🔗 Demo video <a name="demo-video"></a>
 
-## 🛠 Video demonstrating the project <a name="demo-link"></a>
+- [Demo video](https://drive.google.com/file/d/1rEEuXnCnKHfKaw_6sQ8maDlK7RwZwFWk/view?usp=sharing)
 
-[Demo-video](https://drive.google.com/file/d/1rEEuXnCnKHfKaw_6sQ8maDlK7RwZwFWk/view?usp=sharing)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
