@@ -50,3 +50,15 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Lint/ShadowingOuterLocalVariable:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+Naming/FileName:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Lint/DuplicateBranch:
+  Enabled: false

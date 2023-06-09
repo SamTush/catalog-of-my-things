@@ -1,16 +1,16 @@
 require_relative 'game'
-require_relative 'game-collection'
+require_relative 'game_collection'
 require 'json'
 
 
 class App
   def main_menu
-    puts "Hey Welcome to Our catalog"
+    puts 'Hey Welcome to Our catalog'
     options = [
       '1 - Books',
       '2 - Music albums ',
       '3 - Games',
-      '4 - Quit',
+      '4 - Quit'
     ]
     puts options
     option = gets.chomp.downcase

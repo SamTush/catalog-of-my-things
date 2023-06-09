@@ -72,7 +72,6 @@ class GameStore
     File.write('./data/games.json', JSON.pretty_generate(data))
   end
 
-
   def load_data
     return unless File.exist?('./data/games.json')
 
