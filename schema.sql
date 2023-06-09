@@ -15,3 +15,13 @@ CREATE TABLE labels (
   id INT PRIMARY KEY,
   name VARCHAR(255)
 );
+
+CREATE TABLE musicalbum (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    publish_date DATE,
+    on_spotify BOOLEAN,
+    archived BOOLEAN,
+    genre_id INT,
+    PRIMARY KEY(id),
+    CONSTRAINT fk_genre FOREIGN KEY(genre_id) REFERENCES genre(id)
+);

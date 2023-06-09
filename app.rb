@@ -21,8 +21,9 @@ class App
       require_relative 'book-collection'
 
     when '2'
-      album = MusicAlbumDisplay.new('./data/albums.json')
-      album.run
+      # album = MusicAlbumDisplay.new('./data/albums.json')
+      # album.run
+      require_relative 'music_album_collection'
     when '3'
       game = GameStore.new
       game.run
