@@ -2,9 +2,10 @@ class Item
   attr_accessor :id, :genre, :author, :source, :label, :publish_date, :archived
 
 
-  def initialize(id=Random.rand(1..1000), genre='nil', author='', source='', label=1, publish_date ='200-2-2')
+  def initialize(id = Random.rand(1..1000), genre = 'nil', author = '', source = '', label = 1,
+                 publish_date = '200-2-2')
     @id = id
-    # @genre = nil
+    @genre = genre
     @author = author
     @source = source
     @label = label
@@ -31,4 +32,3 @@ class Item
     end
   end
 end
-
