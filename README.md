@@ -28,6 +28,10 @@ In this project, We create a console app that will help us to keep a record of d
 
 ## 🛠 Built With <a name="built-with"></a>
 
+## 🛠 See project demonstration <a name="built-with"></a>
+
+[presentation](https://drive.google.com/file/d/1rEEuXnCnKHfKaw_6sQ8maDlK7RwZwFWk/view?usp=sharing)
+
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
