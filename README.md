@@ -13,6 +13,7 @@ In this project, We create a console app that will help us to keep a record of d
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🔗 Demo video](#demo-link)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
 - [👥 Authors](#authors)
@@ -28,10 +29,6 @@ In this project, We create a console app that will help us to keep a record of d
 
 ## 🛠 Built With <a name="built-with"></a>
 
-## 🛠 See project demonstration <a name="built-with"></a>
-
-[presentation](https://drive.google.com/file/d/1rEEuXnCnKHfKaw_6sQ8maDlK7RwZwFWk/view?usp=sharing)
-
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
@@ -46,6 +43,16 @@ In this project, We create a console app that will help us to keep a record of d
     <li><a href="https://www.postgreSQl.org/">Ruby</a></li>
   </ul>
 </details>
+
+
+
+
+## 🛠 Video demonstrating the project <a name="demo-link"></a>
+
+[Demo-video](https://drive.google.com/file/d/1rEEuXnCnKHfKaw_6sQ8maDlK7RwZwFWk/view?usp=sharing)
+
+
+
 
 ### Key Features <a name="key-features"></a>
 
