@@ -1,12 +1,10 @@
 require 'securerandom'
 require_relative 'item'
 
-
 class Author < Item
-
   attr_reader :id, :first_name, :last_name, :items
 
-  def initialize(first_name, last_name,_items = [])
+  def initialize(first_name, last_name, _items = [])
     super()
     @id = generate_id
     @first_name = first_name
