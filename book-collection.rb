@@ -41,7 +41,7 @@ loop do
   puts "2. List all labels"
   puts "3. Add a book"
   puts "4. Add labels"
-  puts "5. Exit"
+  puts "5. <-- Go back"
 
   choice = gets.chomp.to_i
 
@@ -143,7 +143,7 @@ loop do
 
     File.write(LABELS_FILE, JSON.generate(labels_data))
   when 5
-    puts "Exiting the program..."
+    puts "Going back the program..."
     # Save data to JSON files before exiting
     books_data = books.map do |book|
       {
@@ -168,7 +168,8 @@ loop do
 
     File.write(BOOKS_FILE, JSON.generate(books_data))
     File.write(LABELS_FILE, JSON.generate(labels_data))
-
-    break
+    require_relative 'app'
+    app = App.new
+    app.main_menu
   end
 end

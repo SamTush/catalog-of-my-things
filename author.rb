@@ -14,6 +14,10 @@ class Author < Item
     @items = []
   end
 
+  def full_name
+    "#{@first_name} #{@last_name}"
+  end
+
   def self.json_create(object)
     new(object['first_name'], object['last_name'], object['items'])
   end
