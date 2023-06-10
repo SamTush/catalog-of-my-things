@@ -62,3 +62,5 @@ Metrics/MethodLength:
   Enabled: false
 Lint/DuplicateBranch:
   Enabled: false
+Lint/DuplicateMethods:
+  Enabled: false
